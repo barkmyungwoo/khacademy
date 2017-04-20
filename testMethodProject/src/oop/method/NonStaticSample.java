@@ -27,22 +27,16 @@ public class NonStaticSample {
 		tmp = a[b];
 		a[b] = a[c];
 		a[c] = tmp;
-
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]);
-		}
 	}
 
 	public void sortDescending(int a[]) {
-		// 내림차순
-		int tmp;
+
 		for (int i = 0; i < a.length; i++)
 			for (int j = 0; j < a.length; j++) {
 				if (a[i] > a[j]) {
-					tmp = a[i];
-					a[i] = a[j];
-					a[j] = tmp;
-				}
+					swap(a, i, j);				
+					}
+				
 			}
 	}
 
@@ -52,9 +46,7 @@ public class NonStaticSample {
 		for (int i = 0; i < a.length; i++)
 			for (int j = 0; j < a.length; j++) {
 				if (a[i] < a[j]) {
-					tmp = a[i];
-					a[i] = a[j];
-					a[j] = tmp;
+					swap(a, j, i);				
 				}
 			}
 	}
