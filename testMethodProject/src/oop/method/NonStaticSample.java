@@ -32,7 +32,7 @@ public class NonStaticSample {
 	public void sortDescending(int a[]) {
 
 		for (int i = 0; i < a.length; i++)
-			for (int j = 0; j < a.length; j++) {
+			for (int j = i; j < a.length; j++) {
 				if (a[i] > a[j]) {
 					swap(a, i, j);				
 					}
@@ -44,7 +44,7 @@ public class NonStaticSample {
 		// 오름차순
 		int tmp;
 		for (int i = 0; i < a.length; i++)
-			for (int j = 0; j < a.length; j++) {
+			for (int j = i; j < a.length; j++) {
 				if (a[i] < a[j]) {
 					swap(a, j, i);				
 				}
