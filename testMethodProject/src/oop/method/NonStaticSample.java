@@ -46,7 +46,7 @@ public class NonStaticSample {
 		for (int i = 0; i < a.length; i++)
 			for (int j = i; j < a.length; j++) {
 				if (a[i] < a[j]) {
-					swap(a, j, i);				
+					swap(a, i, j);				
 				}
 			}
 	}

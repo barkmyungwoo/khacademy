@@ -21,32 +21,36 @@ public class StaticMethod {
 	public static void toUpper(){
 		int i;
 		for(i=0; i < value.length() ;i++){
-			System.out.println(value.charAt(i));
+			System.out.print(value.toUpperCase().charAt(i));
 		}
 	}
 	
 	public static void setChar(int a, char b){
 		char[] cd = new char[value.length()];
-		
+		int val;
 		for(int i = 0; i<value.length();i++){
 			cd[i] = value.charAt(i);
 		}
 		
 		cd[a] = b;
+		val = value.length();
 		value ="";
 		
-		for(int i = 0; i<value.length();i++){
-			value += cd[i];
+		for(int i = 0; i<val;i++){
+			value += (char)cd[i];
 		}		
 
-		System.out.println(value);
+		System.out.println(value.length());
+
+		System.out.print(value);
+		System.out.println("??");
 	}
 	
 	public static int valueLength(){
 		return value.length();
 	}
 	
-	private static String valueConcat(String s) {
+	public static String valueConcat(String s) {
 		return (value+s);
 	}
 }
