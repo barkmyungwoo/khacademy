@@ -9,6 +9,7 @@ public class TestSort {
 		for(int i=0;i<su.length;i++){
 			su[i]=(int)(Math.random()*100+1);
 		}
+		
 		for(int i=0;i<su.length;i++){
 			for(int j=i; j<su.length;j++){
 				if(su[i]>su[j]){

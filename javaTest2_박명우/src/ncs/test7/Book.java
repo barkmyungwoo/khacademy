@@ -15,39 +15,43 @@ public class Book {
 		this.bookDiscountRate = bookDiscountRate;
 	}
 
+//-------------------------------------------------------
+
 	public String getCategory() {
 		return category;
 	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
-
 	public String getBookName() {
 		return bookName;
-	}
-
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
 	}
 
 	public double getBookPrice() {
 		return bookPrice;
 	}
 
-	public void setBookPrice(double bookPrice) {
-		this.bookPrice = bookPrice;
-	}
-
 	public double getBookDiscountRate() {
 		return bookDiscountRate;
+	}
+
+//-------------------------------------------------------
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+
+	public void setBookPrice(double bookPrice) {
+		this.bookPrice = bookPrice;
 	}
 
 	public void setBookDiscountRate(double bookDiscountRate) {
 		this.bookDiscountRate = bookDiscountRate;
 	}
 
-	@Override
+//-------------------------------------------------------
+	
 	public String toString() {
 		return category + "\t" + bookName + "\t" + bookPrice
 				+ "\t" + bookDiscountRate;

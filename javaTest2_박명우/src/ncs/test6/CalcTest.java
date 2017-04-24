@@ -9,6 +9,7 @@ public class CalcTest {
 		System.out.println(calc.subtract(4, 2));
 		System.out.println(calc.multiply(4, 2));
 		System.out.println(calc.divide(4, 2));
+
 	}
 
 }

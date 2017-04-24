@@ -20,10 +20,12 @@ public class TestScore {
 
 		for (int i = 0; i < s.length; i++) {
 			System.out.print(i);
+
 			for (int j = 0; j < s[i].length; j++) {
 				System.out.print("\t" + s[i][j]);
 				sum += s[i][j];
 			}
+
 			System.out.print("\t"+sum+"\t");
 			System.out.printf("%.1f",(sum/3));
 			System.out.println();

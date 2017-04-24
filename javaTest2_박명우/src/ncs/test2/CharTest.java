@@ -11,7 +11,7 @@ public class CharTest {
 		
 		int count = s.length();
 		
-		for(int i=count-1; i>=0;i--){
+		for(int i=count-1; i>=0 ; i--){
 			System.out.print(s.toUpperCase().charAt(i));
 		}
 	}

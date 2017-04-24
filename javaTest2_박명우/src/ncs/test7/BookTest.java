@@ -5,6 +5,7 @@ public class BookTest {
 	public static void main(String[] args) {
 		Book bookArray[] = new Book[5];
 		double sum=0;
+		
 		{
 			bookArray[0] = new Book("IT", "SQL PLUS", 50000, 5.0);
 			bookArray[1] = new Book("IT", "JAVA 2.0", 40000, 3.0);
@@ -13,13 +14,13 @@ public class BookTest {
 			bookArray[4] = new Book("Nobel", "cloven hoof ", 50000, 15.0);
 		}
 		
+
 		for(int i=0; i< bookArray.length;i++){
 			System.out.println(bookArray[i].toString());
 			sum+= bookArray[i].getBookPrice();
 		}
-		System.out.println("합계는 : "+sum);
-		
 
+		System.out.println("합계는 : "+sum);
 	}
 
 }
