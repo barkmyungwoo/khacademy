@@ -12,7 +12,7 @@ public class TestNonstaticSample {
 		
 		System.out.println(al);
 		
-		String sub = no.mySubstring("abcdefghijklmnop", 3, 2); 
+		String sub = no.mySubstring("abcdefghijklmnop", 3, 11); 
 		
 		System.out.println(sub);
 	}

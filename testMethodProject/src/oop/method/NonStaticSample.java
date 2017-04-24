@@ -5,7 +5,7 @@ public class NonStaticSample {
 	public NonStaticSample() {
 	}
 
-	public int[] NonStaticSample(int i) {
+	public int[] intArrayAllocation(int i) {
 		int[] a = new int[i];
 
 		for (int j = 0; j < a.length; j++) {
@@ -61,17 +61,17 @@ public class NonStaticSample {
 	}
 
 	public int totalValue(int a, int b) {
-		// 작은수에서 큰수까지 더하기
 		int sum = 0;
 
-		if (a > b) {
-			for (int i = a; i < b; i++)
+		if (a < b) {
+			for (int i = a; i <= b; i++)
 				sum += i;
 		} 
 		else {
 			for (int i = b; i < a; i++)
 				sum += i;
 		}
+		
 		return sum;
 	}
 
