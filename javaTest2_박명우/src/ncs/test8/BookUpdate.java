@@ -6,6 +6,7 @@ public class BookUpdate {
 	Book bookData = new Book();
 
 	public BookUpdate(){
+
 	}
 
 	public BookUpdate(Book bookData){
@@ -17,8 +18,9 @@ public class BookUpdate {
 	public Book getBookData(){
 		return bookData;
 	}
+
 	public Book updataBookPrice(){
-		bookData.setBookPrice(bookData.getBookPrice()-(bookData.getBookPrice()*bookData.getBookDiscountRate()/100));		
+		bookData.setBookPrice(bookData.getBookPrice()-(bookData.getBookPrice()*bookData.getBookDiscountRate()/100));
 		return bookData;
-	};
+	}
 }
