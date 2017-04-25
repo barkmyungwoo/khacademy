@@ -7,7 +7,7 @@ public class TestSort {
 		int tmp=0;
 		
 		for(int i=0;i<su.length;i++){
-			su[i]=(int)(Math.random()*100+1);
+			su[i]=(int)(Math.random()*50+51);
 		}
 		
 		for(int i=0;i<su.length;i++){
